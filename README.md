@@ -12,9 +12,9 @@ This project will contain a single class called the `GradeEngine`. This class wi
 GradeEngine(PerformanceData: Dataframe, Metrics: DataFrame) -> sorted listof StudentData 
 ```
 
-## Tech Stack
+## Tech Stack & API Specifications
 
-The logic will be written purely in Python and will be served using a FastAPI server, with the following endpoints:-
+The frontend will be written React and the logic will be written purely in Python and will be served using a FastAPI server, with the following endpoints:-
 
 ```
 GET /data
