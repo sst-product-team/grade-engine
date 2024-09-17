@@ -16,10 +16,21 @@ GradeEngine(PerformanceData: Dataframe, Metrics: DataFrame) -> sorted listof Stu
 
 The logic will be written purely in Python and will be served using a FastAPI server, with the following endpoints:-
 
-### GET /data
+```
+GET /data
 
-### POST /data
+Fetches the ID of all the data files(csv) available to be graded.
 
-### DELETE /data
+POST /data
 
-### GET /grade/<dataID>
+Uploads a given csv file into the server for grade calculation.
+
+DELETE /data/<dataID>
+
+Deletes the file with ID from the server.
+
+POST /data/<dataID>/metric
+
+Adds a grading metric(csv) to the data with ID `dataID`.
+```
+
