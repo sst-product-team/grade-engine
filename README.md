@@ -20,17 +20,33 @@ The logic will be written purely in Python and will be served using a FastAPI se
 GET /data
 
 Fetches the ID of all the data files(csv) available to be graded.
-
+```
+```
 POST /data
 
 Uploads a given csv file into the server for grade calculation.
-
+{
+  "filename": stiring,
+  "file": file
+}
+```
+```
 DELETE /data/<dataID>
 
 Deletes the file with ID from the server.
-
+```
+```
 POST /data/<dataID>/metric
 
 Adds a grading metric(csv) to the data with ID `dataID`.
+{
+  "metricName": string,
+  "metrics": object
+}
+```
+```
+GET /grade/<dataID>/<metricID>
+
+Calculates and returns the grades of students based on student data with ID `dataID` and metric `metricID`
 ```
 
