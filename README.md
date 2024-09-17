@@ -50,3 +50,11 @@ GET /grade/<dataID>/<metricID>
 Calculates and returns the grades of students based on student data with ID `dataID` and metric `metricID`
 ```
 
+## v1 Scope
+
+- For every `StudentData` sheet we will store an aggregation column.
+- Automatic email handling to students
+
+## v2 Scope
+
+- Implement custom logic on columns which is triggered when certian criteria are not fulfilled by a result of a student like attendance below 75% when CGPA is not above 9.0, reduce the final result of the student by some formula.
